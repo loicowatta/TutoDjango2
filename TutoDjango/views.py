@@ -4,7 +4,7 @@ Created on 23 févr. 2018
 @author: loico
 '''
 from django.shortcuts import render, redirect
-from TutoDjango.models import Person, Student, Employee, Message
+from TutoDjango.models import Person, Student, Employee, Message, Cursus
 from TutoDjango.forms import LoginForm
 from TutoDjango.forms import StudentProfileForm, EmployeeProfilForm
 
