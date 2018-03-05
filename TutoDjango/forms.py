@@ -10,6 +10,7 @@ from TutoDjango.models import Employee
 
 class LoginForm(forms.Form):
     email       = forms.EmailField(label='Courriel')
+    email2       = forms.EmailField(label='Courriel')
     password    = forms.CharField(label='Mot de passe', 
                                   widget = forms.PasswordInput)
     def clean(self):
