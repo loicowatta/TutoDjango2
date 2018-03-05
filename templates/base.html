@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<title>TutoDjango - {%block title%} Bienvenue {%endblock %} </title>
+		<link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/
+		jquery.min.js">
+		</script>
+	</head>
+	<body id="{% block body_id%}bodyID{%endblock%}">
+		<header id="{% block header_id%}headerID{%endblock%}">
+			<p> {% block header %} Generic Page {%endblock%} </p>
+		</header>
+		<section id="{% block section_id%}Section1{%endblock%}">
+			<p>{%block content%} Bienvenue dans mon premier projet Django avec héritage {%endblock %}
+			</p>
+		</section> 
+	</body>
+</html>

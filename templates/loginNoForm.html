@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %} login {% endblock %}
+{% block header %}  {% endblock %}
+{% block body_id%}BodyLogin{%endblock%}
+{% block section_id%}Login1{%endblock%}
+{% block content %} 
+	<form action="login" method='post'>
+		{% csrf_token %}
+		{% if error %}
+			<p class="error"> 
+				{{error}} 
+			</p>
+		{% endif %}
+		<p>
+			<label for="email"> Courrierl : </label>
+			<input name="email" id="email" type="email" size="30"/>
+		</p>
+		<p>
+			<label for="password"> Mot de passe : </label>
+			<input name="password" id="password" size="30" type="password" />
+		</p>
+		<p>
+			<input type="submit" value="Se connecter" />
+			<a href=" "> Créer un compte </a>
+		</p>
+	</form>
+{% endblock%}

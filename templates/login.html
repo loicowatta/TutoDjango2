@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %} login {% endblock %}
+{% block header %}  {% endblock %}
+{% block body_id%}BodyLogin{%endblock%}
+{% block content %} 
+	<form action="login" method='post'>
+		{% csrf_token %}
+		{{form.as_p}}
+		<p>
+			<input type="submit" value="Se connecter" />
+			<a href=" "> Créer un compte </a>
+		</p>
+	</form>
+{% endblock%}
